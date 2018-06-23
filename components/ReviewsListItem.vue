@@ -6,11 +6,11 @@
         <p class="review-list-item__name">Strobe Level</p>
         <p class="review-list-item__value">{{strobeLevel}}</p>
       </div>
-      <div>
+      <div class="review-list-item__tag">
         <p class="review-list-item__name">Rating</p>
         <p class="review-list-item__value">{{rating}}</p>
       </div>
-      <div>
+      <div class="review-list-item__tag">
         <p class="review-list-item__name">Sound Level</p>
         <p class="review-list-item__value">{{soundLevel}}</p>
       </div>
@@ -41,6 +41,7 @@ export default {
 .review-list-item {
   padding: 10px 5px;
   margin: 5px 0px;
+  background-color: white;
 }
 
 .review-list-item__content {

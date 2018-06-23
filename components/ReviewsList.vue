@@ -5,6 +5,7 @@
       :soundLevel="item.sound_level"
       :strobeLevel="item.strobe_level"
       :rating="item.rating"
+      :review="item.review"
       :key="i"
     />
   </div>
