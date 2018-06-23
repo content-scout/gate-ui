@@ -27,6 +27,7 @@ export const actions = {
       .catch(error => commit(GET_ERROR, error));
   },
 }
+
 export const mutations = {
   [GET]: (store, term) => {
     const mutation = {
