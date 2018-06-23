@@ -1,11 +1,13 @@
 <template>
   <div class="info">
-    <h1 class="info-title">{{title}}</h1>
-    <p class="info-description">{{description}}</p>
+    <div>
+      <h1 class="info-title">{{title}}</h1>
+      <p class="info-description">{{description}}</p>
+    </div>
     <div class="info-list">
       <div class="info-list__item">
         <p>Strobe Level<p>
-        <p>{{strobe_level}}</p>
+        <p>{{strobeLevel}}</p>
       </div>
       <div class="info-list__item">
         <p>Sound Average<p>
@@ -42,6 +44,10 @@ export default {
 </script>
 
 <style>
+.info {
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
 .info-list__item {
   display: flex;
   justify-content: space-between;
