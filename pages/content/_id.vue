@@ -9,6 +9,9 @@ export default {
   components: {
     Info,
   },
+  props: {
+    
+  },
 }
 </script>
 

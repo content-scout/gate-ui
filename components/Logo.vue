@@ -1,7 +1,7 @@
 <template>
   <a href="/">
     <div>
-      Logo
+     <img src="../static/logo.png" alt="">
     </div>
   </a>
 </template>

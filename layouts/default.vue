@@ -59,4 +59,18 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+.header {
+background-color: #E7CDB8;
+height: 8vh;
+}
+
+.header img{
+height: 8vh;
+}
+
+body{
+  background-color: #4A4A4A;
+}
+
 </style>
