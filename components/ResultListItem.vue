@@ -21,6 +21,8 @@ export default {
 .result-list-item {
   padding: 10px 5px;
   margin: 5px 0px;
+  border-radius: 2px;
+  border: 1px solid grey;
 }
 
 .result-list-item__title {

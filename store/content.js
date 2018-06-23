@@ -7,33 +7,29 @@ const GET_ERROR = '/GET/ERROR';
 const initialState = () => ({
   loading: undefined,
   error: undefined,
-  term: undefined,
   data: undefined,
 });
 
 export const getters = {
-  data: state => state.data,
-  term: state => state.term,
+  results: state => state.results,
   error: state => state.error,
   loading: state => state.loading,
 };
 
 export const actions = {
   getList: ({ commit }, term) => {
-    commit(GET, term);
+    commit(GET);
 
-    return api.getContentListByTerm(term)
+    return api.getContentByUrl(term)
       .then(data => commit(GET_SUCCESS, data))
       .catch(error => commit(GET_ERROR, error));
   },
 }
-
 export const mutations = {
-  [GET]: (store, term) => {
+  [GET]: (store) => {
     const mutation = {
       loading: true,
       error: false,
-      term,
     };
 
     Object.assign(store, mutation);
@@ -45,7 +41,6 @@ export const mutations = {
     };
 
     Object.assign(store, mutation);
-    console.log('store', store)
   },
   [GET_ERROR]: (store, error) => {
     const mutation = {

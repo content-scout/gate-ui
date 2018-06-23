@@ -1,7 +1,6 @@
 <template>
   <article class="container">
     <div>
-      <h1>Content Scout</h1>
       <form-search :onSubmit="search" />
       <loader v-if="loading" />
       <result-list v-else :list="data" />

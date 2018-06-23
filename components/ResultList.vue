@@ -1,5 +1,6 @@
 <template>
   <section>
+    <pre>{{JSON.stringify(list)}}</pre>
     <result-list-item
       v-for="item in list"
       :title="item.title"
@@ -9,7 +10,7 @@
 </template>
 
 <script>
-import ResultListItem from '~/components/FormSearch.vue';
+import ResultListItem from '~/components/ResultListItem.vue';
 
 export default {
   components: {

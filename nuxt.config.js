@@ -3,14 +3,18 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'content-gatekeeper',
+    title: 'Media Bat',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        href: "https://fonts.googleapis.com/css?family=Cabin|Open+Sans",
+        rel: "stylesheet"
+      },
     ]
   },
   /*
@@ -39,6 +43,6 @@ module.exports = {
   ** Environment variables to be shared between client and server
   */
   env: {
-    baseURL: `http://localhost:8000`,
+    baseURL: 'http://localhost:8000',
   },
 }
