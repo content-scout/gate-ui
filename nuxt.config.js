@@ -34,5 +34,11 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  /*
+  ** Environment variables to be shared between client and server
+  */
+  env: {
+    baseURL: `http://HOSTNAME:PORT`,
+  },
 }
