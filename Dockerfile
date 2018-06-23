@@ -30,4 +30,6 @@ EXPOSE 3000
 # Set to production mode
 ENV NODE_ENV production
 
-CMD ["npm", "start"]
+RUN npm run build
+
+CMD ["npm", "run", "prod"]
