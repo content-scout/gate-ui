@@ -1,7 +1,11 @@
 <template>
   <section class="form-search">
-      <input v-model="term" placeholder="Search movie" />
-      <button @click="onSubmit">Search</button>
+      <input
+        v-model="term"
+        placeholder="Search movie"
+        @keyup.enter="handleSubmit"
+      />
+      <button @click="handleSubmit">Search</button>
   </section>
 </template>
 
@@ -16,6 +20,11 @@ export default {
     return {
       term: '',
     };
+  },
+  methods: {
+    handleSubmit() {
+      this.onSubmit(this.term)
+    },
   },
 }
 </script>
