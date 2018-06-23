@@ -1,6 +1,5 @@
 <template>
   <section>
-    <pre>{{JSON.stringify(list)}}</pre>
     <result-list-item
       v-for="item in list"
       :title="item.title"

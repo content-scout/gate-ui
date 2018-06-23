@@ -8,7 +8,16 @@ const initialState = () => ({
   loading: undefined,
   error: undefined,
   term: undefined,
-  data: undefined,
+  data: [
+    {
+      title: 'Incredibles',
+      url: 'www.google.com',
+    },
+    {
+      title: 'Incredibles 2',
+      url: 'www.google.com',
+    },
+  ],
 });
 
 export const getters = {
