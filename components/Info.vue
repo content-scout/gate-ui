@@ -31,7 +31,7 @@ export default {
     soundAvg: {
       type: Number,
     },
-    ratingavg: {
+    ratingAvg: {
       type: Number,
     },
     description: {

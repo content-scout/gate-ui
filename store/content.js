@@ -29,16 +29,16 @@ const initialState = () => ({
 });
 
 export const getters = {
-  results: state => state.results,
+  data: state => state.data,
   error: state => state.error,
   loading: state => state.loading,
 };
 
 export const actions = {
-  getList: ({ commit }, term) => {
+  getList: ({ commit }, url) => {
     commit(GET);
 
-    return api.getContentByUrl(term)
+    return api.getContentByUrl(url)
       .then(data => commit(GET_SUCCESS, data))
       .catch(error => commit(GET_ERROR, error));
   },
