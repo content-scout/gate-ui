@@ -4,21 +4,24 @@ const instance = axios.create({
   baseURL: `${process.env.baseURL}`,
 });
 
-export const getContentListByTerm = term => {
-  return Promise.resolve([
-    {
-      title: "The Incredibles",
-      url: "www.google.com",
-    },
-    {
-      title: "The Incredibles 2",
-      url: "www.google.com",
-    },
-  ])
+export const getContentListByTerm = name => {
+  const url = `/review/?name=${name}`;
+
+  return instance.get(url)
+    .then(({ status, statusText, data }) => {
+      if (status !== 200) throw new Error(`[${status}]: ${statusText}`);
+      console.log(data)
+      return data.data;
+    })
 }
 
 export const getContentByUrl = url => {
-  return Promise.resolve({})
+  return instance.get(url)
+    .then(({ status, statusText, data }) => {
+      if (status !== 200) throw new Error(`[${status}]: ${statusText}`);
+      console.log(data)
+      return data.data;
+    })
 }
 
 export const createReviewById = (id, review) => {
