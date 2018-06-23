@@ -1,7 +1,9 @@
 <template>
-  <div class="result-list-item">
-    <h3 class="result-list-item__title">{{title}}</h3>
-  </div>
+  <a href="/content" class="result-list-item__anchor">
+    <div class="result-list-item">
+      <h3 class="result-list-item__title">{{title}}</h3>
+    </div>
+  </a>
 </template>
 
 <script>
@@ -25,7 +27,10 @@ export default {
   border: 1px solid grey;
 }
 
-.result-list-item__title {
-
+.result-list-item__anchor {
+  text-decoration: none;
+  color: initial;
 }
+
+
 </style>
