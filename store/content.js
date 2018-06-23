@@ -7,7 +7,25 @@ const GET_ERROR = '/GET/ERROR';
 const initialState = () => ({
   loading: undefined,
   error: undefined,
-  data: undefined,
+  data: {
+    "sound_avg": 3.0,
+    "strobe_average": 3.0,
+    "title": "The Incredibles",
+    "rating_avg": 3.0,
+    "reviews": [
+      {
+        "sound_level": 5,
+        "review": "Very dangerous for photosensitive people",
+        "strobe_level": 5,
+        "rating": 5
+      }, {
+        "sound_level": 1,
+        "review": "this was bad for me",
+        "strobe_level": 1,
+        "rating": 1
+      }],
+      "description": "Cute family movie. I guess."
+    },
 });
 
 export const getters = {
