@@ -56,6 +56,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: gray;
+  color: white;
+  padding: 2.5px 5px;
+  margin: 2.5px 5px;
 }
 .review-list-item__value {
   margin-left: 3px;
