@@ -23,5 +23,11 @@ export const getContentByUrl = url => {
 }
 
 export const createReviewById = (id, review) => {
-  return Promise.resolve({});
+  const url = `/reviews/content/${id}`;
+
+  return instance.get(url, review)
+    .then(({ status, statusText, data }) => {
+      if (status !== 200) throw new Error(`[${status}]: ${statusText}`);
+      return data.data;
+    })
 }

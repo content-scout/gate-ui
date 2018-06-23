@@ -1,6 +1,6 @@
 <template>
-  <article class="thanks">
-    <p>This is a thanks page</p>
+  <article class="container">
+    <p>Thank you for helping!</p>
   </article>
 </template>
 
@@ -8,4 +8,13 @@
 </script>
 
 <style>
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
 </style>

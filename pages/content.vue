@@ -7,6 +7,9 @@
       :soundAvg="data.sound_avg"
       :ratingAvg="data.rating_avg"
     />
+    <a href="/review" class="content-bar-button">
+      Add a review
+    </a>
     <reviews-list
       :list="data.reviews"
     />
@@ -40,5 +43,15 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.content-bar-button {
+  display: block;
+  padding: 5px 10px;
+  color: initial;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px 0px;
 }
 </style>
