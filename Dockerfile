@@ -30,4 +30,4 @@ EXPOSE 3000
 # Set to production mode
 ENV NODE_ENV production
 
-ENTRYPOINT npm start
+CMD ["npm", "start"]
